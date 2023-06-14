@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+
+    <style>
+        /* fixed css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .answer.active {
+            max-height: 500px;
+        }
+
+        .icon {
+            transition: transform 0.5s;
+        }
+
+        .icon.active {
+            transform: rotate(-180deg);
+        }
+
+        /* fixed css */
+
+
+
+
+        @media (min-width: 300px) and (max-width: 500px) {
+            .firstHeading {
+                text-align: center;
+                font-size: 2em;
+            }
+
+            .accordian {
+                background-color: rgba(102, 116, 204, 0.2);
+                margin: 30px 10px;
+                padding: 20px 30px;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px black;
+                border-radius: 10px;
+                border: 1.5px solid black;
+            }
+
+            .question {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1em;
+                color: rgb(102, 116, 204);
+            }
+
+            .answer {
+                padding-top: 10px;
+                color: black;
+                text-align: justify;
+                font-size: 1.1em;
+                line-height: 1.3em;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s;
+            }
+        }
+
+
+
+        @media (min-width: 500px) and (max-width: 900px) {
+            .firstHeading {
+                text-align: center;
+                font-size: 2.5em;
+            }
+
+            .accordian {
+                background-color: rgba(102, 116, 204, 0.2);
+                margin: 30px 100px;
+                padding: 20px 30px;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px black;
+                border-radius: 10px;
+                border: 1.5px solid black;
+            }
+
+            .question {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1em;
+                color: rgb(102, 116, 204);
+            }
+
+            .answer {
+                padding-top: 10px;
+                color: black;
+                text-align: justify;
+                font-size: 1em;
+                line-height: 1.3em;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s;
+            }
+        }
+
+
+        /* for laptop and wide screen*/
+        @media (min-width: 900px) and (max-width: 5000px) {
+            .firstHeading {
+                text-align: center;
+                font-size: 3em;
+
+            }   
+
+            .accordian {
+                background-color: rgba(102, 116, 204, 0.2);
+                margin: 30px 200px;
+                padding: 10px 30px;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px black;
+                border-radius: 10px;
+                border: 1.5px solid black;
+            }
+
+            .question {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1em;
+                color: rgb(102, 116, 204);
+            }
+
+            .answer {
+                padding-top: 10px;
+                color: black;
+                text-align: justify;
+                font-size: 1em;
+                line-height: 1.3em;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s;
+            }
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/ec910ce67a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <h1 class="firstHeading">FAQ`s</h1>
+
+    <div class="accordian">
+        <div class="question">
+            <h3>What is C++ ?</h3>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="answer">
+            <p>
+                Cpp / C++ is an object oriented programming language.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="accordian">
+        <div class="question">
+            <h3>What is Java ?</h3>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="answer">
+            <p>
+                Java is an object oriented programming language. Mostly used for android development
+            </p>
+        </div>
+    </div>
+
+
+    <div class="accordian">
+        <div class="question">
+            <h3>What is Python ?</h3>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="answer">
+            <p>
+                Python is an object oriented programming language. Mostly used in Artificial Intelligence and Data Science.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="accordian">
+        <div class="question">
+            <h3>What is JavaScript ?</h3>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="answer">
+            <p>
+                JavaScript is an object oriented programming language. Mostly used for Web Development.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="accordian">
+        <div class="question">
+            <h3>What is Html ?</h3>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="answer">
+            <p>
+                Html is a markup language for web. Html stands for Hyper Text Markup Language.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="accordian">
+        <div class="question">
+            <h3>What is Css ?</h3>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="answer">
+            <p>
+                Css is a stylesheet language use to style web. Css stands for cascading style sheet.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="accrodian.js"></script>
+
+</body>
+
+</html>
